@@ -1,0 +1,9 @@
+parameters:
+    paths:
+        - ./src
+    level: max
+    reportUnmatchedIgnoredErrors: false
+    treatPhpDocTypesAsCertain: false
+
+    excludePaths:
+        - ./tests

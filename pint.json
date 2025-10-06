@@ -1,0 +1,22 @@
+{
+    "extends": "@laravel",
+    "ignore": [],
+    "rules": {
+        "@PSR12": true,
+        "no_unused_imports": true,
+        "concat_space": {
+            "spacing": "one"
+        },
+        "multiline_whitespace_before_semicolons": {
+            "strategy": "new_line_for_chained_calls"
+        },
+        "array_syntax": {
+            "syntax": "short"
+        },
+        "@PhpCsFixer:risky": true,
+        "static_lambda": false,
+        "php_unit_strict": false
+    },
+    "fixers": [
+    ]
+}

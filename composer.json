@@ -1,0 +1,64 @@
+{
+    "name": "bensedev/request-bag",
+    "description": "Request-scoped data container for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "request",
+        "context",
+        "bag",
+        "container"
+    ],
+    "authors": [
+        {
+            "name": "bensedev",
+            "email": "ben.serlippens@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bensedev\\RequestBag\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bensedev\\RequestBag\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "^12.0",
+        "illuminate/contracts": "^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^v8.1.1",
+        "pestphp/pest": "^v3.0.0",
+        "phpunit/phpunit": "^11.0.0",
+        "phpstan/phpstan": "^2.1",
+        "laravel/framework": "^12.20"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bensedev\\RequestBag\\RequestBagServiceProvider"
+            ],
+            "aliases": {
+                "RequestBag": "Bensedev\\RequestBag\\Facades\\RequestBag"
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "analyse": "vendor/bin/phpstan analyse --error-format=table",
+        "format": "vendor/bin/pint"
+    }
+}
