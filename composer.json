@@ -34,12 +34,12 @@
         "illuminate/contracts": "^12.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.0",
+        "laravel/pint": "^1.25",
         "nunomaduro/collision": "^v8.1.1",
         "pestphp/pest": "^v3.0.0",
         "phpunit/phpunit": "^11.0.0",
         "phpstan/phpstan": "^2.1",
-        "laravel/framework": "^12.20"
+        "laravel/framework": "^12.32"
     },
     "extra": {
         "laravel": {
